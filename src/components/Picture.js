@@ -8,9 +8,9 @@ const Picture = ({ data }) => {
         <img src={data.src.large} />
       </div>
       <p>
-        在此下載圖片：
+        點此下載圖片：
         <a target="_blank" href={data.src.large}>
-          按一下
+          下載
         </a>
       </p>
     </div>

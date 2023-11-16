@@ -10,6 +10,7 @@
     .imageContainer {
       overflow: hidden;
       height: 40vh;
+      margin: 0.5rem 0;
       img {
         width: 100%;
         height: 100%;
@@ -19,6 +20,10 @@
           transform: scale(1.25);
         }
       }
+    }
+    a{
+      text-decoration: underline;
+      color: rgb(150, 174, 209);
     }
   }
 }

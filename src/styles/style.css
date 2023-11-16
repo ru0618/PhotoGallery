@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,122 +18,117 @@ ul {
 }
 
 .morePicture {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 4rem;
 }
-
 .morePicture button {
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   border: none;
-  background-color: #bafcb5;
+  background-color: #e1acab;
   cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
 }
 
 nav {
-  background-color: #e4ffe2;
+  background-color: #fbe2e0;
 }
-
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 2rem;
 }
-
 nav ul li {
   padding: 0.5rem 1rem;
 }
-
 nav ul li a {
   font-size: 1.25rem;
 }
 
-.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.search-container {
+  background-image: url(/public/banner4.jpg);
+  background-size: 100%;
+  height: 40vh;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.search-container .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  background-color: hsla(0, 0%, 99%, 0.796);
+  border-radius: 20px;
+  box-shadow: -2px 2px 15px #5c5a5a;
+}
+.search-container .search-bar .title {
+  font-size: 1.6rem;
+  color: #737171;
+  font-weight: 800;
+}
+.search-container .search-bar .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 0rem;
+  gap: 1rem;
 }
-
-.search input,
-.search button {
-  font-size: 2rem;
-  padding: 0.25rem;
-  border: 3px solid #bafcb5;
+.search-container .search-bar .search input,
+.search-container .search-bar .search button {
+  font-size: 1.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
 }
-
-.search button {
-  background-color: #bafcb5;
+.search-container .search-bar .search input {
+  border: 2px solid #e1acab;
+}
+.search-container .search-bar .search button {
+  background-color: #e19998;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 1.25rem;
-  background-color: #e4ffe2;
+  background-color: #fbe2e0;
   min-height: 10vh;
 }
 
 .pictures {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 .pictures .picture {
   padding: 1rem;
   width: 400px;
 }
-
 .pictures .picture .imageContainer {
   overflow: hidden;
   height: 40vh;
+  margin: 0.5rem 0;
 }
-
 .pictures .picture .imageContainer img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .pictures .picture .imageContainer img:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
 }
-/*# sourceMappingURL=style.css.map */
+.pictures .picture a {
+  text-decoration: underline;
+  color: rgb(150, 174, 209);
+}/*# sourceMappingURL=style.css.map */
